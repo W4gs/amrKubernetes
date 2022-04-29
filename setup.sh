@@ -16,7 +16,7 @@ echo "Unzipping Client...."
 /bin/unzip $AMRDIR/$AMRFILE -d $AMRDIR/ 2>&1 > /dev/nulll
 
 echo "Writing out settings.json to $AMRDIR/AskMrRobotClient/...."
-echo -e '{\n  \"ClientUserSettings\": {\n    "Username": "$AMRUSERNAME",\n    "Token": "$AMRTOKEN",\n    "PerformanceMode": "Batch",\n    "Threads": 1.0,\n    "EnableGlobalNetwork": false,\n    "GlobalNetworkThreads": -1.0,\n    "GlobalNetworkSchedule": ""\n  }\n}\n"' > $AMRDIR/AskMrRobotClient/settings.json
+echo -e "{\n  \"ClientUserSettings\": {\n    \"Username\": \"$AMRUSERNAME\",\n    \"Token\": \"$AMRTOKEN\",\n    \"PerformanceMode\": \"Batch\",\n    \"Threads\": 1.0,\n    \"EnableGlobalNetwork\": false,\n    \"GlobalNetworkThreads\": -1.0,\n    \"GlobalNetworkSchedule\": \"\"\n  }\n}\n" > $AMRDIR/AskMrRobotClient/settings.json
 
 echo "Running AMR Client...."
 /bin/dotnet $AMRDIR/AskMrRobotClient/simclient.dll
