@@ -10,7 +10,7 @@ echo "Installing Dependencies...."
 /bin/yum install unzip dotnet-host dotnet-sdk-3.1 -y 2>&1 > /dev/nulll
 
 echo "Downloading Client...."
-/bin/curl https://static.askmrrobot.com/wowsite/client/$DLFILE -o $AMRDIR/$AMRFILE 2>&1 > /dev/null
+/bin/curl https://static.askmrrobot.com/wowsite/client/$AMRFILE -o $AMRDIR/$AMRFILE 2>&1 > /dev/null
 
 echo "Unzipping Client...."
 /bin/unzip $AMRDIR/$AMRFILE -d $AMRDIR/ 2>&1 > /dev/nulll
