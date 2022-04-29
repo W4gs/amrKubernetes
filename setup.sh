@@ -14,3 +14,9 @@ echo "Downloading Client...."
 
 echo "Unzipping Client...."
 /bin/unzip $ASKDIR/$DLFILE -d $ASKDIR/ 2>&1 > /dev/nulll
+
+echo "Copying json to $ASKDIR/AskMrRobotClient...."
+/bin/cp settings.json $ASKDIR/AskMrRobotClient/
+
+echo "Running AMR Client...."
+/bin/dotnet $ASKDIR/AskMrRobotClient/simclient.dll
