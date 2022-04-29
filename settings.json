@@ -1,0 +1,11 @@
+{
+  "ClientUserSettings": {
+    "Username": "autris",
+    "Token": "ae8e4af3830c4175bd0c5e12e22a5848a16e783ac9ae443aba57f30130f1e37d",
+    "PerformanceMode": "Batch",
+    "Threads": 1.0,
+    "EnableGlobalNetwork": false,
+    "GlobalNetworkThreads": -1.0,
+    "GlobalNetworkSchedule": ""
+  }
+}
