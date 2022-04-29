@@ -3,9 +3,6 @@
 echo "Making $AMRDIR Directory...."
 /bin/mkdir -p $AMRDIR
 
-echo "Changing To $AMRDIR Directory...."
-/bin/cd $AMRDIR
-
 echo "Installing Dependencies...."
 /bin/yum install unzip dotnet-host dotnet-sdk-3.1 -y 2>&1 > /dev/nulll
 
